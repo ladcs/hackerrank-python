@@ -3,7 +3,6 @@ import os
 
 # primeira resolução
 def taumBday_v1(b, w, bc, wc, z):
-    # Write your code here
     if bc != wc:
         low = bc if bc < wc else wc
         high = bc if wc < bc else wc
@@ -17,7 +16,10 @@ def taumBday_v1(b, w, bc, wc, z):
 
 # segunda resolução
 def taumBday_v2(b, w, bc, wc, z):
-    return min((b * bc) + (w * wc), (b + w) * bc + (w * z), (b + w) * wc + b * z)
+    not_change_gift = (b * bc) + (w * wc)
+    change_b_to_w = (b + w) * wc + (b * z)
+    change_w_to_b = (b + w) * bc + (w * z)
+    return min(not_change_gift, change_b_to_w, change_w_to_b)
 
 
 if __name__ == "__main__":

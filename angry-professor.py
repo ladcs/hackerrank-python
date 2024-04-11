@@ -2,8 +2,7 @@ import os
 
 
 def angryProfessor(k, a):
-    early_studant = [n for n in a if n <= 0]
-    return "NO" if k <= len(early_studant) else "YES"
+    return "NO" if k <= len([n for n in a if n <= 0]) >= k else "YES"
 
 
 if __name__ == "__main__":
