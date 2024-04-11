@@ -107,3 +107,71 @@ caso 4: bc > wc + z, saída (b + w) * wc + b * z => (7 + 7) * 2 + 7 * 1 = 14 * 2
 caso 5: wc > bc + z, saída (b + w) * bc + w * z => (3 + 3) * 1 + 3 * 2 = 6 + 6 = 12
 
 </details>
+
+<details><summary>angry professor</summary>
+
+Um professor de matemática tem uma classe de estudantes. Ele está frustrado com a frequência em suas aulas e decidiu cancelar se não houver o número mínimo de estudantes no horário.
+
+<strong>Exemplo</strong>
+
+n = 5
+
+k = 3
+
+a = [-2, -3, 0, 1, 2]
+
+Eles quer o número mínimo é de 3 alunos presentes, os 3 primeiros chegaram antes ou no horário e os 2 últimos atrasado, assim tem aula retornando 'NO'.
+
+
+<strong>descrição da função</strong>
+
+a função angryProfessor retorna YES se a aula for cancelada, ou NO caso contrário.
+
+angryProfessor tem os parametros:
+
+int k => número de alunos no horário. 1 <= k <= n
+    
+int a[n] => array dos horários dos alunos. -100 <= a[i] <= 100, 1 <= n <= 1000
+
+Retornos
+
+string: tanto YES ou NO
+
+Input Format
+
+primeira linha <strong> t</strong>, número de casos.
+
+segunda linha n e k.
+
+terceira linha a[n].
+
+
+<strong>entrada hacker-rank</strong>
+
+2
+
+4 3
+
+-1 -3 4 2
+
+4 2
+
+0 -1 2 1
+
+<strong>saida da função</strong>
+
+YES
+
+NO
+
+<strong>Explicação</strong>
+
+caso 1: espera 3 alunos no horário (a[i] <= 0), tendo apenas dois, assim a aula é cancelada retornando YES.
+
+4 2
+
+0 -1 2 1
+
+caso 2: espera 2 alunos no horário, tem 2 no horário, assim a aula não é cancelada, retornado NO
+
+</details>
