@@ -108,7 +108,7 @@ caso 5: wc > bc + z, saída (b + w) * bc + w * z => (3 + 3) * 1 + 3 * 2 = 6 + 6 
 
 </details>
 
-<details><summary>angry professor</summary>
+<details><summary><strong>angry professor</strong></summary>
 
 Um professor de matemática tem uma classe de estudantes. Ele está frustrado com a frequência em suas aulas e decidiu cancelar se não houver o número mínimo de estudantes no horário.
 
@@ -173,5 +173,66 @@ caso 1: espera 3 alunos no horário (a[i] <= 0), tendo apenas dois, assim a aula
 0 -1 2 1
 
 caso 2: espera 2 alunos no horário, tem 2 no horário, assim a aula não é cancelada, retornado NO
+
+</details>
+
+<details><summary><strong>beautful day for a movie</strong></summary>
+
+Lily criou um jogo com números inteiros, nele ela calcula a diferença entre um número e seu reverso. Por exemplo: a diferença entre o número <strong>12</strong> e o <strong>21</strong>, que é 9.
+
+Ela usa esse jogo para tomadas de decisões. Ela vai observar os dias para ver um filme em um intervalo de dias.
+
+Assim, dando um intervalo <strong>[i, i + 1, ..., j]</strong> e o número <strong>k</strong>, deve se determinar a quantidades de bons dias para ir ao cinema, pegando a diferença do dia, mais o seu inverso dividido pelo número <strong>k</strong>
+
+<strong>Exemplo</strong>
+
+n = 5
+
+k = 3
+
+a = [-2, -3, 0, 1, 2]
+
+Eles quer o número mínimo é de 3 alunos presentes, os 3 primeiros chegaram antes ou no horário e os 2 últimos atrasado, assim tem aula retornando 'NO'.
+
+
+<strong>descrição da função</strong>
+
+a função beautifulDays retorna um número.
+
+beautifulDays tem os parametros:
+
+int i, j => criação do intervalo dos dias, i é o começo e j o final do interválo. 1 <= i, j <= 2x10⁶
+
+int k => número para dividir. 1 <= k <= 2X10⁹
+
+Retornos
+
+int
+
+Input Format
+
+i j k
+
+<strong>entrada hacker-rank</strong>
+
+20 23 6
+
+<strong>saida da função</strong>
+
+2
+
+<strong>Explicação</strong>
+
+Intervalo dos dias 20, 21, 22, 23.
+
+dia 20: |20 - 02| / 6 = 18 / 6 = 3, inteiro, dia bonito.
+
+dia 21: |21 - 12| / 6 = 9 / 6 = 1,5, não é inteiro, não é um dia bonito.
+
+dia 22: |22 - 22| / 6 = 0 / 6 = 0, inteiro, dia bonito.
+
+dia 23: |23 - 32| / 6 = 9 / 6 = 1,5, não é inteiro, não é um dia bonito.
+
+Assim dias bonitos temos dia 20 e 22, retorno igual 2!
 
 </details>

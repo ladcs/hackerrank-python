@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
         z = int(second_multiple_input[2])
 
-        result = taumBday(b, w, bc, wc, z)
+        result = taumBday_v2(b, w, bc, wc, z)
 
         fptr.write(str(result) + "\n")
 
