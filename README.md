@@ -197,9 +197,9 @@ Eles quer o número mínimo é de 3 alunos presentes, os 3 primeiros chegaram an
 
 <strong>descrição da função</strong>
 
-a função beautifulDays retorna um número.
+a função viralAdvertising retorna um número.
 
-beautifulDays tem os parametros:
+viralAdvertising tem os parametros:
 
 int i, j => criação do intervalo dos dias, i é o começo e j o final do interválo. 1 <= i, j <= 2x10⁶
 
@@ -234,5 +234,63 @@ dia 22: |22 - 22| / 6 = 0 / 6 = 0, inteiro, dia bonito.
 dia 23: |23 - 32| / 6 = 9 / 6 = 1,5, não é inteiro, não é um dia bonito.
 
 Assim dias bonitos temos dia 20 e 22, retorno igual 2!
+
+</details>
+
+<details><summary><strong>Viral Advertising</strong></summary>
+
+A empresa HackerLand adotou uma estratégia de propaganda viral. Quando um produto é lançado, eles lançam a propaganda para exatamente <strong>5</strong> pessoas em uma mídia social.
+
+No primeiro dia metade das <strong>5</strong> pessoas, arredondado para baixo (i.e. floor(5/2)=2), gostaram e enviaram para <strong>3</strong>, ou seja, <strong>6</strong> pessoas, receberam a propagando no segundo dia.
+
+Assim se mantem com o passar dos dias, as pessoas que gostarem da propaganda envia para 3 pessoas, onde a metade delas irão gostar.
+
+<strong>descrição da função</strong>
+
+A função viralAdvertising retorna um número.
+
+viralAdvertising tem os parametros:
+
+int n => número de dias. 1 <=  n <= 50
+
+Retornos
+
+int, quantas pessoas gostaram no período total.
+
+Input Format
+
+n
+
+<strong>entrada hacker-rank</strong>
+
+5
+
+
+3
+
+<strong>saida da função</strong>
+
+24
+
+
+9
+
+<strong>Explicação</strong>
+
+<strong> caso 1 </strong>
+
+dia     compartilhado       curtido     acumulado
+1           5                   2           2
+2           6                   3           5
+3           9                   4           9
+4           12                  6           15
+5           18                  9           24
+
+Assim no quinto dia tem 24 acumulado.
+
+
+<strong> caso 2 </strong>
+
+No primeiro dia 5 pessoas receberam, 5/2 = 2,5, assim 2 pessoas gostaram e compartilham para 6, no segundo dia das 6 pessoas, 6/2 = 3 curtiram e compartilharam para 9 pessoas, ou seja, 5 pessoas gostaram até então, por fim no terceiro dia das 9 pessoas tem-se que 9/2 = 4,5, ou seja, 4 pessoas gostaram, dando 9 pessoas que gostaram no final.
 
 </details>
