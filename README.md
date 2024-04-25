@@ -294,3 +294,45 @@ Assim no quinto dia tem 24 acumulado.
 No primeiro dia 5 pessoas receberam, 5/2 = 2,5, assim 2 pessoas gostaram e compartilham para 6, no segundo dia das 6 pessoas, 6/2 = 3 curtiram e compartilharam para 9 pessoas, ou seja, 5 pessoas gostaram até então, por fim no terceiro dia das 9 pessoas tem-se que 9/2 = 4,5, ou seja, 4 pessoas gostaram, dando 9 pessoas que gostaram no final.
 
 </details>
+
+<details><summary><strong>Save the Prisoners!</summary></strong>
+
+Uma prisão tem um número de prisioneiros e um número de guloseimas para distribuir a eles. O carcereiro decide a maneira mais justa de dividir as guloseimas é sentar os prisioneiros ao redor de uma mesa circular em cadeiras numeradas sequencialmente. Um número de cadeira será sorteado de um chapéu. Começando com o prisioneiro naquela cadeira, uma guloseima será entregue a cada prisioneiro sequencialmente ao redor da mesa até que todas tenham sido distribuídas.
+
+O carcereiro está fazendo uma pequena brincadeira, porém. A última peça de guloseima parece com todas as outras, mas tem um gosto horrível. Determine o número da cadeira ocupada pelo prisioneiro que receberá essa guloseima.
+
+<strong>descrição da função</strong>
+
+A função saveThePrisoner retorna um número.
+
+saveThePrisoner tem os parametros:
+
+int n => número de prisioneiros. 1 <=  n <= 10⁹
+
+int m => número de doces. 1 <= m <= 1010⁹
+
+int s => número da cadeira no qual começa. 1 <= s <= n
+
+Retornos
+
+int, última cadeira a receber um doce.
+
+Input Format
+
+t     => quantos casos 1 <= t <= 100
+
+n  m  s
+
+<strong>entrada hacker-rank</strong>
+2
+5 2 1
+5 2 2
+<strong>saida da função</strong>
+2
+3
+
+<strong>Explicação</strong>
+No primeiro caso há 5 prisioneiro, dois doces e começa pela cadeira 1, assim a segunda cadeira recebe o último doce.
+
+No segundo caso a mesma situação começa na cadeira 2, fazendo que o último doce fique com a cadeira 3.
+</details>
