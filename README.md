@@ -15,6 +15,7 @@ O custo para converter o presente, de branco para preto e de preto para branco �
 
 Deve determinar o custo mínimo para comprar os presentes.
 
+
 <strong>exemplo:</strong>
 b = 3
 
@@ -280,10 +281,15 @@ n
 <strong> caso 1 </strong>
 
 dia     compartilhado       curtido     acumulado
+
 1           5                   2           2
+
 2           6                   3           5
+
 3           9                   4           9
+
 4           12                  6           15
+
 5           18                  9           24
 
 Assim no quinto dia tem 24 acumulado.
@@ -309,7 +315,7 @@ saveThePrisoner tem os parametros:
 
 int n => número de prisioneiros. 1 <=  n <= 10⁹
 
-int m => número de doces. 1 <= m <= 1010⁹
+int m => número de doces. 1 <= m <= 10⁹
 
 int s => número da cadeira no qual começa. 1 <= s <= n
 
@@ -324,11 +330,17 @@ t     => quantos casos 1 <= t <= 100
 n  m  s
 
 <strong>entrada hacker-rank</strong>
+
 2
+
 5 2 1
+
 5 2 2
+
 <strong>saida da função</strong>
+
 2
+
 3
 
 <strong>Explicação</strong>
